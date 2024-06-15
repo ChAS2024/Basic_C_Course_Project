@@ -1,6 +1,7 @@
+
 "-h" - obtaining information about possible launch keys with a brief description of their purpose;
 
-"-f <file name>" - specifying the file to process, where file_name is the file name. If the “-m” option 
+"-f <file name>" - specifying the file to process, where file_name is the file name. If the "-m" option 
             is not added in this mode, then complete statistics for the entire file will be displayed;
 
 "-m <xx>" - specifying the month to obtain statistics for a specific month, where xx is the month;

@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
             case 'h': // если включен вывод файла help на консоль
                 { // выводим напрямую текст из файла help.txt в консоль
                     PrintFromFile("help.txt");
-                    flag = 1;
                 }
                 break;
             case 'f': 

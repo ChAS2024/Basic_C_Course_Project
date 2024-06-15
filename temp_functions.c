@@ -40,6 +40,12 @@ outputValue MaxMinAverPreMonth(sensorData* dataArray, int lenght, int month) {
             count++;
         }
     }
+    if (count == 0) {
+        out.max     = 0;
+        out.min     = 0;
+        out.average = 0;
+        return out;
+    }
     out.average = (1. * sum) / count;
     return out;
 }
@@ -69,56 +75,56 @@ void PrintOutputData(outputValue out, int month) {
         case 0:
             printf("\n=====================================================\n");
             printf("Statisctic for the Year:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             printf("=====================================================\n");
             break;
         case 1:
             printf("\nStatisctic for the January:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 2:
             printf("\nStatisctic for the February:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 3:
             printf("\nStatisctic for the March:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 4:
             printf("\nStatisctic for the April:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 5:
             printf("\nStatisctic for the May:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 6:
             printf("\nStatisctic for the June:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 7:
             printf("\nStatisctic for the July:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 8:
             printf("\nStatisctic for the August:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 9:
             printf("\nStatisctic for the September:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 10:
             printf("\nStatisctic for the October:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 11:
             printf("\nStatisctic for the November:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
         case 12:
             printf("\nStatisctic for the December:\n");
-            printf("Max value: %3d, Min value: %3d, Average value: %6.2f\n", out.max, out.min, out.average);
+            printf("Max value:%3d, Min value:%3d, Average value:%6.2f\n", out.max, out.min, out.average);
             break;
     }
 }
